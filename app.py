@@ -21,6 +21,10 @@ CREDENTIALS_FILE = 'credentials.json'
 
 if os.path.exists('projectbigquery-474916-3fbbedcb8e15.json'):
     CREDENTIALS_FILE = 'projectbigquery-474916-3fbbedcb8e15.json'
+elif 'gcp' in st.secrets:
+    import json
+    with open(CREDENTIALS_FILE, 'w') as f:
+        json.dump(dict(st.secrets['gcp']), f)
 
 creds = Credentials.from_service_account_file(
     CREDENTIALS_FILE,
@@ -46,13 +50,15 @@ DATA_IPRESS = {
 }
 
 # --- LÓGICA DE ESTADO Y AUTOCOMPLETADO ---
-if "form_key" not in st.session_state: 
+if "form_key" not in st.session_state:
     st.session_state.form_key = 0
 
 # ✅ NUEVO: ESTADO PARA LIMPIAR GRILLA
-if "grilla_vacia" not in st.session_state: 
+if "grilla_vacia" not in st.session_state:
     st.session_state.grilla_vacia = pd.DataFrame(
-        columns=[ "CodSISMED", "DESCRIPCION", "PRESENTACION", "CONCENTRACION", "FORMA", "CPM", "STOCK" ] 
+        columns=[
+            "CodSISMED", "DESCRIPCION", "PRESENTACION", "CONCENTRACION", "FORMA", "CPM", "STOCK"
+        ]
     )
 
 def actualizar_establecimiento():
@@ -68,7 +74,7 @@ def actualizar_establecimiento():
         st.session_state.opciones_diag = ["Seleccione un diagnóstico..."]
 
 # --- 3. SEGURIDAD (LLAVE DE ACCESO) ---
-st.sidebar.title("🔐 Acceso al Sistema")
+st.sidebar.title("%F0%9F%94%90 Acceso al Sistema")
 llave_usuario = st.sidebar.text_input(
     "Ingrese la LLAVE DE ACCESO:", type="password"
 )
@@ -76,7 +82,7 @@ llave_usuario = st.sidebar.text_input(
 if llave_usuario != "sismed2026":
     st.title("💊 Registro de Medicamentos e Insumos por IPRESS")
     st.warning(
-        "⚠️ Ingrese la llave correcta en la barra lateral para continuar."
+        "⚠%EF%B8%8F Ingrese la llave correcta en la barra lateral para continuar."
     )
     st.stop()
 
@@ -166,7 +172,7 @@ with tab_individual:
                     "NombreIPRESS": st.session_state.nom_ip,
                     "Diagnóstico": diag_sel,
                     "Responsable": nombres_pers,
-                    "Celular": cellular_pers,
+                    "Celular": celular_pers,
                     "Correo": correo_pers,
                     "Cargo": cargo_pers,
                     "Oficina": oficina_pers,
