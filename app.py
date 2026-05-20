@@ -74,7 +74,7 @@ def actualizar_establecimiento():
         st.session_state.opciones_diag = ["Seleccione un diagnóstico..."]
 
 # --- 3. SEGURIDAD (LLAVE DE ACCESO) ---
-st.sidebar.title("%F0%9F%94%90 Acceso al Sistema")
+st.sidebar.title("Acceso al Sistema")
 llave_usuario = st.sidebar.text_input(
     "Ingrese la LLAVE DE ACCESO:", type="password"
 )
@@ -82,7 +82,7 @@ llave_usuario = st.sidebar.text_input(
 if llave_usuario != "sismed2026":
     st.title("💊 Registro de Medicamentos e Insumos por IPRESS")
     st.warning(
-        "⚠%EF%B8%8F Ingrese la llave correcta en la barra lateral para continuar."
+        "Ingrese la llave correcta en la barra lateral para continuar."
     )
     st.stop()
 
