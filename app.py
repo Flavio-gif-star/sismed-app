@@ -10,6 +10,20 @@ import os
 # 1. CONFIGURACIÓN DE LA PÁGINA
 st.set_page_config(page_title="Registro SISMED - Sistema Completo", layout="wide")
 
+# Ocultar el botón "Manage app" y menús de desarrollo
+st.markdown(
+    """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .viewerBadge_container__1QS1Y {display: none !important;}
+    div[data-testid="stDecoration"] {display: none;}
+    style + div {visibility: hidden !important;}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # --- CONEXIÓN A GOOGLE SHEETS ---
 scope = [
     "https://www.googleapis.com/auth/spreadsheets",
