@@ -137,14 +137,14 @@ DATA_IPRESS = {
 "1436":["TUMBES","GOB.REG.TUMBES-HOSP.REGIONAL JOSE ALFREDO MENDOZA OLAVARRIA-JAMO II-2 TUMBES",["Enfermedades raras y huérfanas","Oncología","Terapia sin reemplazo renal"]],
 "1452":["CALLAO","GOB. REG. DEL CALLAO - HOSPITAL DE VENTANILLA",["Enfermedades raras y huérfanas","Oncología"]],
 "1489":["AYACUCHO","GOB. REG. DE AYACUCHO - RED DE SALUD SAN MIGUEL",["Enfermedades raras y huérfanas","Oncología"]],
-"1512":["INSN-SAN BORJA","INSTITUTO NACIONAL DE SALUD DEL NIÑO - SAN BORJA",["Enfermedades raras y huérfanas","Hemodiálisis","Oncología","Terapia sin reemplazo renal""Trasplante de Hígado"]],
+"1512":["INSN-SAN BORJA","INSTITUTO NACIONAL DE SALUD DEL NIÑO - SAN BORJA",["Enfermedades raras y huérfanas","Hemodiálisis","Oncología","Terapia sin reemplazo renal","Trasplante de Hígado"]],
 "1657":["AREQUIPA","REG. AREQUIPA - HOSPITAL CENTRAL DE MAJES ING. ANGEL GABRIEL CHURA GALLEGOS",["Enfermedades raras y huérfanas","Oncología","Terapia sin reemplazo renal"]],
 "1667":["CALLAO","GOB. REG. DEL CALLAO - HOSPITAL DE REHABILITACION DEL CALLAO",["Enfermedades raras y huérfanas"]],
 "1670":["DIRIS LIMA SUR","HOSPITAL DE EMERGENCIAS VILLA EL SALVADOR",["Diálisis Peritoneal","Enfermedades raras y huérfanas","Hemodiálisis","Oncología"]],
 "1731":["JUNIN","GOB. REG. DE JUNIN - HOSPITAL REGIONAL DOCENTE DE MEDICINA TROPICAL DOCTOR JULIO CESAR DEMARINI CARO",["Diálisis Peritoneal","Enfermedades raras y huérfanas","Hemodiálisis","Oncología"]],
 "1735":["JUNIN","GOB. REG. DE JUNIN - INSTITUTO REGIONAL DE ENFERMEDADES NEOPLÁSICAS DEL CENTRO - IREN CENTRO",["Enfermedades raras y huérfanas","Oncología","Terapia sin reemplazo renal"]],
 "1743":["CAJAMARCA","GOB. REG. DPTO. CAJAMARCA - HOSPITAL SANTA MARIA DE CUTERVO",["Oncología"]],
-"1746":["DIRIS LIMA ESTE","HOSPITAL DE LIMA ESTE - VITARTE",["Diálisis Peritoneal","Enfermedades raras y huérfanas","Hemodiálisis","Oncología""Terapia sin reemplazo renal"]],
+"1746":["DIRIS LIMA ESTE","HOSPITAL DE LIMA ESTE - VITARTE",["Diálisis Peritoneal","Enfermedades raras y huérfanas","Hemodiálisis","Oncología","Terapia sin reemplazo renal"]],
 }
 
 # --- LÓGICA DE ESTADO Y AUTOCOMPLETADO ---
